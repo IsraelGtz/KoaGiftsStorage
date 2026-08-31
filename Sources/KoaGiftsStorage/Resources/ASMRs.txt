@@ -1,0 +1,12 @@
+[
+  {
+    "name": "HansHerre",
+    "title": "My best try",
+    "audioName": "hans_herre_asmr_audio"
+  },
+  {
+    "name": "Merol",
+    "title": "Meditation time...?",
+    "audioName": "merol_asmr_audio"
+  }
+]

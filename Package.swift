@@ -3,23 +3,31 @@
 
 import PackageDescription
 
+private let name = "KoaGiftsStorage"
+private let nameTest = name + "Tests"
+
 let package = Package(
-    name: "KoaGiftsStorage",
+    name: name,
+    platforms: [
+        .iOS(.v17),
+    ],
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "KoaGiftsStorage",
-            targets: ["KoaGiftsStorage"]
+            name: name,
+            targets: [name]
         ),
     ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "KoaGiftsStorage"
+            name: name,
+            resources: [
+                .copy("Resources/Letters.txt"),
+                .copy("Resources/Definitions.txt"),
+                .copy("Resources/ASMRs.txt"),
+            ]
         ),
         .testTarget(
-            name: "KoaGiftsStorageTests",
+            name: nameTest,
             dependencies: ["KoaGiftsStorage"]
         ),
     ]
