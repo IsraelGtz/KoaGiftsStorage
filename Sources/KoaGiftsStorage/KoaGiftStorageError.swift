@@ -8,8 +8,9 @@
 import Foundation
 
 public enum KoaGiftStorageError: Error {
-    case notLettersFile
-    case notDefinitionsFile
-    case notASMRsFile
+    case noLettersFile
+    case noDefinitionsFile
+    case noASMRsFile
+    case noVideoSectionsFile
     case decodingError(Error)
 }

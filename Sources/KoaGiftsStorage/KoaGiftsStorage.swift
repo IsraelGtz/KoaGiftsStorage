@@ -9,7 +9,7 @@ public final class KoaGiftsStorage: Sendable {
 
     public func fetchLetters() throws -> [Letter] {
         guard let fileURL = Bundle.module.url(forResource: "Letters", withExtension: "txt") else {
-            throw KoaGiftStorageError.notLettersFile
+            throw KoaGiftStorageError.noLettersFile
         }
         do {
             let data = try Data(contentsOf: fileURL)
@@ -22,7 +22,7 @@ public final class KoaGiftsStorage: Sendable {
 
     public func fetchDefinitions() throws -> [KoaDefinition] {
         guard let fileURL = Bundle.module.url(forResource: "Definitions", withExtension: "txt") else {
-            throw KoaGiftStorageError.notDefinitionsFile
+            throw KoaGiftStorageError.noDefinitionsFile
         }
         do {
             let data = try Data(contentsOf: fileURL)
@@ -35,12 +35,25 @@ public final class KoaGiftsStorage: Sendable {
 
     public func fetchASMRs() throws -> [ASMR] {
         guard let fileURL = Bundle.module.url(forResource: "ASMRs", withExtension: "txt") else {
-            throw KoaGiftStorageError.notASMRsFile
+            throw KoaGiftStorageError.noASMRsFile
         }
         do {
             let data = try Data(contentsOf: fileURL)
             let asmrs = try decoder.decode([ASMR].self, from: data)
             return asmrs
+        } catch {
+            throw KoaGiftStorageError.decodingError(error)
+        }
+    }
+    
+    public func fetchVideoSections() throws -> VideoSections {
+        guard let fileURL = Bundle.module.url(forResource: "VideoSections", withExtension: "txt") else {
+            throw KoaGiftStorageError.noVideoSectionsFile
+        }
+        do {
+            let data = try Data(contentsOf: fileURL)
+            let sections = try decoder.decode(VideoSections.self, from: data)
+            return sections
         } catch {
             throw KoaGiftStorageError.decodingError(error)
         }

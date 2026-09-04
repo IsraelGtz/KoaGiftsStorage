@@ -2,14 +2,13 @@
 import Testing
 
 @Test func successful_load_letters() async throws {
-    // Write your test here and use APIs like `#expect(...)` to check expected conditions.
+    let letters = try KoaGiftsStorage.shared.fetchLetters()
+    print(letters)
+    #expect(!letters.isEmpty)
+}
 
-    do {
-        let letters = try KoaGiftsStorage.shared.fetchLetters()
-        print(letters)
-
-        #expect(!letters.isEmpty)
-    } catch {
-        print(error)
-    }
+@Test func successful_load_videoSections() async throws {
+    let sections = try KoaGiftsStorage.shared.fetchVideoSections()
+    print(sections)
+    #expect(sections.collaborations.count >= 1)
 }
