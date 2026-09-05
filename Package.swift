@@ -21,7 +21,8 @@ let package = Package(
         .target(
             name: name,
             resources: [
-                .copy("Resources/Letters.txt"),
+                .copy("Resources/AudioLetters.txt"),
+                .copy("Resources/PhysicalLetterNames.txt"),
                 .copy("Resources/Definitions.txt"),
                 .copy("Resources/ASMRs.txt"),
                 .copy("Resources/VideoSections.txt"),

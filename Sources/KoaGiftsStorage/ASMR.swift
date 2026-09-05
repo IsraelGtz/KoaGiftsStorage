@@ -12,4 +12,8 @@ public struct ASMR: Codable, Identifiable, Hashable {
     public let name: String
     public let title: String
     public let audioName: String
+
+    enum CodingKeys: String, CodingKey {
+        case name, title, audioName
+    }
 }

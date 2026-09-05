@@ -1,0 +1,42 @@
+[
+  {
+    "author": "HansHerre",
+    "fileName": "HansHerre_physicalLetter"
+  },
+  {
+    "author": "Mr. Nighty",
+    "fileName": "MrNighty_physicalLetter"
+  },
+  {
+    "author": "Nean Black",
+    "fileName": "NeanBlack_physicalLetter"
+  },
+  {
+    "author": "Azinthehollow",
+    "fileName": "Azinthehollow_physicalLetter"
+  },
+  {
+    "author": "Van Slade",
+    "fileName": "VanSlade_physicalLetter"
+  },
+  {
+    "author": "Ademir Bazan",
+    "fileName": "AdemirBazan_physicalLetter"
+  },
+  {
+    "author": "Jeff",
+    "fileName": "Jeff_physicalLetter"
+  },
+  {
+    "author": "Esteban V.",
+    "fileName": "EstebanV_physicalLetter"
+  },
+  {
+    "author": "JoaquínVS",
+    "fileName": "JoaquinVS_physicalLetter"
+  },
+  {
+    "author": "Zowux",
+    "fileName": "Zowux_physicalLetter"
+  }
+]

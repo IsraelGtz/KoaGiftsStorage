@@ -7,13 +7,26 @@ public final class KoaGiftsStorage: Sendable {
 
     private init() {}
 
-    public func fetchLetters() throws -> [Letter] {
-        guard let fileURL = Bundle.module.url(forResource: "Letters", withExtension: "txt") else {
-            throw KoaGiftStorageError.noLettersFile
+    public func fetchAudioLetters() throws -> [AudioLetter] {
+        guard let fileURL = Bundle.module.url(forResource: "AudioLetters", withExtension: "txt") else {
+            throw KoaGiftStorageError.noAudioLettersFile
         }
         do {
             let data = try Data(contentsOf: fileURL)
-            let letters = try decoder.decode([Letter].self, from: data)
+            let letters = try decoder.decode([AudioLetter].self, from: data)
+            return letters
+        } catch {
+            throw KoaGiftStorageError.decodingError(error)
+        }
+    }
+
+    public func fetchPhysicalLetters() throws -> [PhysicalLetter] {
+        guard let fileURL = Bundle.module.url(forResource: "PhysicalLetterNames", withExtension: "txt") else {
+            throw KoaGiftStorageError.noPhysicalLetterNamesFile
+        }
+        do {
+            let data = try Data(contentsOf: fileURL)
+            let letters = try decoder.decode([PhysicalLetter].self, from: data)
             return letters
         } catch {
             throw KoaGiftStorageError.decodingError(error)
@@ -45,14 +58,14 @@ public final class KoaGiftsStorage: Sendable {
             throw KoaGiftStorageError.decodingError(error)
         }
     }
-    
-    public func fetchVideoSections() throws -> VideoSections {
+
+    public func fetchVideoSections() throws -> [VideoSection] {
         guard let fileURL = Bundle.module.url(forResource: "VideoSections", withExtension: "txt") else {
             throw KoaGiftStorageError.noVideoSectionsFile
         }
         do {
             let data = try Data(contentsOf: fileURL)
-            let sections = try decoder.decode(VideoSections.self, from: data)
+            let sections = try decoder.decode(VideoSections.self, from: data).sections
             return sections
         } catch {
             throw KoaGiftStorageError.decodingError(error)

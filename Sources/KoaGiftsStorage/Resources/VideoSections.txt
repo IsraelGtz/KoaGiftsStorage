@@ -1,44 +1,67 @@
 {
-  "specialGuestAppearances": [
-    {
-      "title": "Blue Archive\nCM Arcie's Live Stream #38 with Akugaki Koa⛓️",
-      "url": "https://www.youtube.com/watch?v=t3rD2M2V6CU"
-    }
-  ],
-  "liveConcerts": [
-    {
-      "title": "【2D LIVE CONCERT】CHAOS REQUIEM PARADE",
-      "url": "https://www.youtube.com/watch?v=H4j2xKmZ5rI"
-    }
-  ],
-  "covers": [
-    {
-      "title": "Tententengokujigokugoku (天天天国地獄国) / Akugaki Koa x Nene Amano cover",
-      "url": "https://www.youtube.com/watch?v=YayJGjiaX8o&list=PLWX-0stnBiVcw5RF6mIUA3O_4GW2ftjxb"
-    },
-    {
-      "title": "【MV】 キュートなカノジョ Cute na Kanojo / Akugaki Koa (cover 歌ってみた)",
-      "url": "https://youtu.be/0seS-MIzMTE"
-    },
-    {
-      "title": "【MV】 Ride on Time / Akugaki Koa (cover 歌ってみた)",
-      "url": "https://youtu.be/tFa1e-ACf1U"
-    },
-    {
-      "title": "【MV】 Valentine Kiss / バレンタイン・キス (cover / 歌ってみた) 【Akugaki Koa】",
-      "url": "https://youtu.be/JxS0LDSegos"
-    },
-    {
-      "title": "【MV】 Holy Night / ホーリーナイト (cover / 歌ってみた) 【Akugaki Koa 】",
-      "url": "https://youtu.be/yj1rvrhDx0Y"
-    },
-    {
-      "title": "ルシファー / アクガキコア 【歌ってみた】 Lucifer / ¿? shimon (Akugaki Koa cover)",
-      "url": "https://youtu.be/n0ns_14gEZU"
-    },
-    {
-      "title": "ラヴィ / アクガキコア 【歌ってみた】 Lavie / Surii (Akugaki Koa cover)",
-      "url": "https://youtu.be/jCR0oXD9nL4"
-    }
-  ]
+ "sections":
+    [
+        {
+            "title": "↜ SPECIAL GUEST APPEARANCE ↝",
+            "elements":
+            [
+                {
+                    "title": "Blue Archive\nCM Arcie's Live Stream #38 with Akugaki Koa⛓️",
+                    "url": "https://www.youtube.com/watch?v=t3rD2M2V6CU"
+                }
+            ]
+        },
+        {
+            "title": "↜ SPONSORED VIDEOS ↝",
+            "elements":
+            [
+                {
+                    "title": "Chromashift x Gamersupps\nTasting the forbidden flavors of the internet",
+                    "url": "https://www.youtube.com/watch?v=-HkbKly6quM"
+                }
+            ]
+        },
+        {
+            "title": "♪ LIVE CONCERTS ♪",
+            "elements": [
+                {
+                    "title": "【2D LIVE CONCERT】CHAOS REQUIEM PARADE",
+                    "url": "https://www.youtube.com/watch?v=H4j2xKmZ5rI"
+                }
+            ]
+        },
+        {
+            "title": "♪ COVERS ♪",
+            "elements": [
+                {
+                  "title": "Tententengokujigokugoku (天天天国地獄国) / Akugaki Koa x Nene Amano cover",
+                  "url": "https://www.youtube.com/watch?v=YayJGjiaX8o&list=PLWX-0stnBiVcw5RF6mIUA3O_4GW2ftjxb"
+                },
+                {
+                  "title": "【MV】 キュートなカノジョ Cute na Kanojo / Akugaki Koa (cover 歌ってみた)",
+                  "url": "https://youtu.be/0seS-MIzMTE"
+                },
+                {
+                  "title": "【MV】 Ride on Time / Akugaki Koa (cover 歌ってみた)",
+                  "url": "https://youtu.be/tFa1e-ACf1U"
+                },
+                {
+                  "title": "【MV】 Valentine Kiss / バレンタイン・キス (cover / 歌ってみた) 【Akugaki Koa】",
+                  "url": "https://youtu.be/JxS0LDSegos"
+                },
+                {
+                  "title": "【MV】 Holy Night / ホーリーナイト (cover / 歌ってみた) 【Akugaki Koa 】",
+                  "url": "https://youtu.be/yj1rvrhDx0Y"
+                },
+                {
+                  "title": "ルシファー / アクガキコア 【歌ってみた】 Lucifer / ¿? shimon (Akugaki Koa cover)",
+                  "url": "https://youtu.be/n0ns_14gEZU"
+                },
+                {
+                  "title": "ラヴィ / アクガキコア 【歌ってみた】 Lavie / Surii (Akugaki Koa cover)",
+                  "url": "https://youtu.be/jCR0oXD9nL4"
+                }
+            ]
+        }
+    ]
 }
