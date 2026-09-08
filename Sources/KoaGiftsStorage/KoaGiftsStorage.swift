@@ -71,4 +71,30 @@ public final class KoaGiftsStorage: Sendable {
             throw KoaGiftStorageError.decodingError(error)
         }
     }
+    
+    public func fetchGallerySections() throws -> [GallerySection] {
+        guard let fileURL = Bundle.module.url(forResource: "Gallery", withExtension: "txt") else {
+            throw KoaGiftStorageError.noGalleryFile
+        }
+        do {
+            let data = try Data(contentsOf: fileURL)
+            let gallerySections = try decoder.decode(Gallery.self, from: data).sections
+            return gallerySections
+        } catch {
+            throw KoaGiftStorageError.decodingError(error)
+        }
+    }
+    
+    public func fetchCredits() throws -> [String] {
+        guard let fileURL = Bundle.module.url(forResource: "Credits", withExtension: "txt") else {
+            throw KoaGiftStorageError.noVideoSectionsFile
+        }
+        do {
+            let data = try Data(contentsOf: fileURL)
+            let credtis = try decoder.decode([String].self, from: data)
+            return credtis
+        } catch {
+            throw KoaGiftStorageError.decodingError(error)
+        }
+    }
 }

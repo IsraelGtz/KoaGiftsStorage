@@ -26,6 +26,8 @@ let package = Package(
                 .copy("Resources/Definitions.txt"),
                 .copy("Resources/ASMRs.txt"),
                 .copy("Resources/VideoSections.txt"),
+                .copy("Resources/Credits.txt"),
+                .copy("Resources/Gallery.txt"),
             ]
         ),
         .testTarget(

@@ -18,3 +18,15 @@ import Testing
     print(physicalLetters)
     #expect(!physicalLetters.isEmpty)
 }
+
+@Test func successful_load_gallerySections() async throws {
+    let sections = try KoaGiftsStorage.shared.fetchGallerySections()
+    print(sections)
+    #expect(!sections.isEmpty)
+}
+
+@Test func successful_load_credits() async throws {
+    let credits = try KoaGiftsStorage.shared.fetchCredits()
+    print(credits)
+    #expect(!credits.isEmpty)
+}

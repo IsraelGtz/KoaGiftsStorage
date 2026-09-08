@@ -18,6 +18,10 @@
                 {
                     "title": "Chromashift x Gamersupps\nTasting the forbidden flavors of the internet",
                     "url": "https://www.youtube.com/watch?v=-HkbKly6quM"
+                },
+                {
+                    "title": "Opera GX\nThese personality tests got TOO REAL... + announcement!!",
+                    "url": "https://www.youtube.com/watch?v=HJjByJqi7y0"
                 }
             ]
         },

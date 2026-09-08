@@ -12,6 +12,8 @@ public enum KoaGiftStorageError: Error {
     case noPhysicalLetterNamesFile
     case noDefinitionsFile
     case noASMRsFile
+    case noGalleryFile
     case noVideoSectionsFile
+    case noCreditsFile
     case decodingError(Error)
 }
