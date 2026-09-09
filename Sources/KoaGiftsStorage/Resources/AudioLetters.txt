@@ -1,7 +1,7 @@
 [
   {
     "name": "HansHerre",
-    "title": "↝🩵",
+    "title": "Dear Koa↝🩵",
     "body": "Hello dear Koa,\n\nThis is a small gift that some Koanikis have created for you, a way to show our love and respect for all your efforts.\n\nIt’s been quite some time since the day of your beautiful debut and your first expo— the one you joyfully told us about for the very first time, and where I was able to give you a little letter. I am so happy to see you working on your life project, something that long ago clicked in my mind and made me tell myself: I must strive just like her, my dear oshi.\n\nY eso e echo, aunque avanzo lento, no me detendré al igual que tu, quiero mejorar mi ingles, para poder hablar contigo alegremente cuando por fin tenga la oportunidad de hablarte en una expo. Escribir y poder expresarme correctamente en el chat junto con todos.\n\nRecuerdo con cariño la vez que te conocí iluminaste nuestras mi vidas, y en la que en un karaoke al cual no fue archivado que nos dijiste con mucho amor y calidez que segáramos nuestros sueños.\n\nI know you love when we write a lot and jump from one conversation to another, each one more interesting and sometimes even philosophical. I love that too, and that’s why, as all Koanikis say, talking with you fills us with so much love and happiness.\n\n\n\nTe amo mucho koa. Never forget ↝🩵🩵🩵🩵",
     "audioName": "HansHerre_Koa_letter_audio"
   },

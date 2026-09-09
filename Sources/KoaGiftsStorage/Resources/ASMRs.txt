@@ -5,6 +5,11 @@
     "audioName": "hans_herre_asmr_audio"
   },
   {
+    "name": "Edwin",
+    "title": "Koa-chan...",
+    "audioName": "edwin_asmr_audio"
+  },
+  {
     "name": "Merol",
     "title": "Meditation time...?",
     "audioName": "merol_asmr_audio"
